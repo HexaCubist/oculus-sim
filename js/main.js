@@ -18,7 +18,8 @@ var resolutions = [
 	{name: 'dk1', w: 1280, h: 800},
 	{name: 'fhd', w: 1920, h: 1080},
 	{name: 'cv1', w: 2560, h: 1440},
-	{name: 'cv2', w: 3840, h: 2160}
+	{name: 'cv2', w: 3840, h: 2160},
+	{name: 'S7', w: 1440, h: 2560}
 ];
 
 var vignettePass, hblurPass, vblurPass, renderPass, copyPass, screenPass;
@@ -455,6 +456,10 @@ function setupComposer(reset) {
 			Z = 1/0.9;
 			break;
 		case 'cv2':
+			W = _W*1.35, H = _H*1.35;
+			Z = 1/1.35;
+			break;
+		case 'S7':
 			W = _W*1.35, H = _H*1.35;
 			Z = 1/1.35;
 			break;
