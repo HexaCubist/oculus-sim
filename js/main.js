@@ -454,17 +454,29 @@ function setupComposer(reset) {
 			W = _W*0.67, H = _H*0.67;
 			Z = 1/0.67;
 			break;
+		case 'pm4':
+			W = _W*1.35, H = _H*1.35;
+			Z = 1/1.35;
+			break;
+		case 'pm8':
+			W = _W*2.7, H = _H*2.7;
+			Z = 1/2.7;
+			break;
+		case 'gvr':
+			W = _W*0.9, H = _H*0.9;
+			Z = 1/0.9;
+			break;
 		case 'cv1':
 			W = _W*0.9, H = _H*0.9;
 			Z = 1/0.9;
 			break;
-		case 'cv2':
-			W = _W*1.35, H = _H*1.35;
-			Z = 1/1.35;
+		case 'psvr':
+			W = _W*0.9, H = _H*0.9;
+			Z = 1/0.9;
 			break;
-		case 'S7':
-			W = _W*1.35, H = _H*1.35;
-			Z = 1/1.35;
+		case 'psvr':
+			W = _W*0.67, H = _H*0.67;
+			Z = 1/0.67;
 			break;
 	}
 
