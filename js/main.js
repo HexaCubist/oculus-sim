@@ -2,7 +2,7 @@ var container, stats;
 
 var camera, controls, scene, renderer, composer;
 
-var persistence = 'high', resolution = 'dk1';
+var persistence = 'low', resolution = 'vive';
 
 var mesh, skymap;
 
@@ -17,17 +17,20 @@ var clock = new THREE.Clock();
 var resolutions = [
 	{name: 'dk1', w: 1280, h: 800},
 	{name: 'fhd', w: 1920, h: 1080},
-	{name: 'cv1', w: 2560, h: 1440},
-	{name: 'cv2', w: 3840, h: 2160},
-	{name: 'S7', w: 1440, h: 2560}
+	{name: 'pm4', w: 3840, h: 2160},
+	{name: 'pm8', w: 7860, h: 4320},
+	{name: 'gvr', w: 2560, h: 1440},
+	{name: 'cv1', w: 2160, h: 1200},
+	{name: 'vive', w: 2160, h: 1200},
+	{name: 'psvr', w: 1920, h: 1080},
 ];
 
 var vignettePass, hblurPass, vblurPass, renderPass, copyPass, screenPass;
 var effectSave, effectBlend, renderTarget, renderTargetParameters;
 
 
-var W = 1280, H = 800, Z = 1;
-var _W = 1280, _H = 800, _Z = 1;
+var W = 2160, H = 1200, Z = 1;
+var _W = 2160, _H = 1200, _Z = 1;
 
 if (!Detector.webgl) {
 	Detector.addGetWebGLMessage();
