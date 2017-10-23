@@ -18,7 +18,7 @@ var resolutions = [
 	{name: 'dk1', w: 1280, h: 800},
 	{name: 'fhd', w: 1920, h: 1080},
 	{name: 'pm4', w: 3840, h: 2160},
-	{name: 'pm8', w: 7860, h: 4320},
+	{name: 'pm8', w: 3840, h: 2160},
 	{name: 'gvr', w: 2560, h: 1440},
 	{name: 'cv1', w: 2160, h: 1200},
 	{name: 'vive', w: 2160, h: 1200},
@@ -459,7 +459,7 @@ function setupComposer(reset) {
 			Z = 1/1.35;
 			break;
 		case 'pm8':
-			W = _W*2.7, H = _H*2.7;
+			W = _W*1.35, H = _H*1.35;
 			Z = 1/2.7;
 			break;
 		case 'gvr':
@@ -470,7 +470,7 @@ function setupComposer(reset) {
 			W = _W*0.9, H = _H*0.9;
 			Z = 1/0.9;
 			break;
-		case 'psvr':
+		case 'vive':
 			W = _W*0.9, H = _H*0.9;
 			Z = 1/0.9;
 			break;
