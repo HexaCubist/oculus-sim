@@ -374,10 +374,10 @@ function addText() {
 	context.strokeRect( 0, 0, canvas.width, canvas.height );
 	context.font	= "bold "+60*s+"px Verdana";
 	context.fillStyle = '#000';
-	context.fillText('oculus', 40*s, s*90);
+	context.fillText('VR', 40*s, s*90);
 	context.font	= "bold "+28*s+"px Verdana";
 	context.fillStyle = '#000';
-	context.fillText('rift simulator', s*45, s*125);
+	context.fillText('Simulator', s*45, s*125);
 	context.font	= "bold "+6*s+"px Verdana";
 	context.fillStyle = '#000';
 	context.fillText('“The future is already here— it\'s just not evenly distributed”', 50*s, 145*s);	
